@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list_1/list_1",
+    "pages/list_2/list_2",
+    "pages/list_3/list_3",
+    "pages/list_4/list_4",
+    "pages/list_5/list_5",
+    "pages/list_6/list_6"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Picking Picking",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "记录"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+<!--pages/list_1/list_1.wxml-->
+<view class="list">
+  <button>nothing</button>
+  <button>nothing</button>
+  <button>nothing</button>
+  <button>nothing</button>
+  <button>nothing</button>
+  <button>nothing</button>
+  <button>nothing</button>
+  <button>nothing</button>
+  <button>nothing</button>
+  <button>nothing</button>
+  <button>nothing</button>
+</view>

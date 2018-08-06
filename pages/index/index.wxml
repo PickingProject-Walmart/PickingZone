@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text  class="user-motto">{{motto}}</text>
+  </view>
+
+  <view class = "shelf-table">
+    <button type="primary" bindtap='goToList1' class = "s1">{{s1}}</button>
+    <button type="primary" bindtap='goToList2' class = "s2">{{s2}}</button>
+    <button type="primary" bindtap='goToList3' class = "s3">{{s3}}</button>
+    <button type="primary" bindtap='goToList4' class = "s4">{{s4}}</button>
+    <button type="primary" bindtap='goToList5' class = "s5">{{s5}}</button>
+    <button type="primary" bindtap='goToList6' class = "s6">{{s6}}</button>
+  </view>
+</view>
