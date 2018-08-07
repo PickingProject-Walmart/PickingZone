@@ -7,12 +7,14 @@
     "pages/list_3/list_3",
     "pages/list_4/list_4",
     "pages/list_5/list_5",
-    "pages/list_6/list_6"
+    "pages/list_6/list_6",
+    "pages/list_7/list_7",
+    "pages/list_8/list_8"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Picking Picking",
+    "navigationBarTitleText": "Picking",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -23,7 +25,7 @@
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "记录"
+        "text": "已完成任务"
       }
     ]
   }

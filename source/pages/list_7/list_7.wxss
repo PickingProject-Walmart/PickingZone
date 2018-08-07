@@ -1,6 +1,6 @@
-/* pages/list_2/list_2.wxss */
+/* pages/list_7/list_7.wxss */
 .task_queue{
-  margin: 0rpx 20rpx;
+  margin: 20rpx 20rpx;
 }
 
 .o1{

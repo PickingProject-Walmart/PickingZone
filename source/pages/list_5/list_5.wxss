@@ -1,1 +1,59 @@
 /* pages/list_5/list_5.wxss */
+.task_queue{
+  margin: 0rpx 20rpx;
+}
+
+.o1{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+.o2{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+.o3{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+.o4{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+.o5{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+.o6{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+.o7{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+.o8{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+.o9{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+.o0{
+  display: flex;
+  align-items: center;
+  margin: 10rpx 5rpx;
+}
+
+.refresh{
+  margin: 100rpx 50rpx;
+}

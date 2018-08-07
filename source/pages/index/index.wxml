@@ -18,5 +18,7 @@
     <button type="primary" bindtap='goToList4' class = "s4">{{s4}}</button>
     <button type="primary" bindtap='goToList5' class = "s5">{{s5}}</button>
     <button type="primary" bindtap='goToList6' class = "s6">{{s6}}</button>
+    <button type="primary" bindtap='goToList7' class = "s7">{{s7}}</button>
+    <button type="primary" bindtap='goToList8' class = "s8">{{s8}}</button>
   </view>
 </view>
