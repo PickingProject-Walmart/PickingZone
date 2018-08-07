@@ -1,4 +1,4 @@
-// pages/list_3/list_3.js
+// pages/list_7/list_7.js
 Page({
 
   /**

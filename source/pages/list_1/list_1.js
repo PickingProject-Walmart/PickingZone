@@ -5,7 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    order_1: "#1\n金典有机纯牛奶250mL * 12\n金典有机纯牛奶250mL * 12\n金典有机纯牛奶250mL * 12\n金典有机纯牛奶250mL * 12\n金典有机纯牛奶250mL * 12\n金典有机纯牛奶250mL * 12\n",
+    order_2: "#2\n暂无任务 Empty",
+    order_3: "#3\n暂无任务 Empty",
+    order_4: "#4\n暂无任务 Empty",
+    order_5: "#5\n暂无任务 Empty",
+    order_6: "#6\n暂无任务 Empty",
+    order_7: "#7\n暂无任务 Empty",
+    order_8: "#8\n暂无任务 Empty",
+    order_9: "#9\n暂无任务 Empty",
+    order_0: "#10\n暂无任务 Empty",
   },
 
   /**

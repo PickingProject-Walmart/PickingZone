@@ -11,6 +11,8 @@ Page({
     s4: '货架4',
     s5: '货架5',
     s6: '货架6',
+    s7: '货架7',
+    s8: '货架8',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -25,6 +27,41 @@ Page({
   goToList1:function(param){
     wx.navigateTo({
       url: '../list_1/list_1',
+    })
+  },
+  goToList2: function (param) {
+    wx.navigateTo({
+      url: '../list_2/list_2',
+    })
+  },
+  goToList3: function (param) {
+    wx.navigateTo({
+      url: '../list_3/list_3',
+    })
+  },
+  goToList4: function (param) {
+    wx.navigateTo({
+      url: '../list_4/list_4',
+    })
+  },
+  goToList5: function (param) {
+    wx.navigateTo({
+      url: '../list_5/list_5',
+    })
+  },
+  goToList6: function (param) {
+    wx.navigateTo({
+      url: '../list_6/list_6',
+    })
+  },
+  goToList7: function (param) {
+    wx.navigateTo({
+      url: '../list_7/list_7',
+    })
+  },
+  goToList8: function (param) {
+    wx.navigateTo({
+      url: '../list_8/list_8',
     })
   },
 

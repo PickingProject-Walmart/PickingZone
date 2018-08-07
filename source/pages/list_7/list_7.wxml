@@ -1,4 +1,4 @@
-<!--pages/list_6/list_6.wxml-->
+<!--pages/list_7/list_7.wxml-->
 <view class="task_queue">
   <view class="o1">
     <button><text>{{order_1}}</text></button>
@@ -40,7 +40,6 @@
     <button><text>{{order_0}}</text></button>
     <switch bindchange="order0Change"/>
   </view>
-
 </view>
 
 <button type='primary'  class="refresh">刷新</button>
