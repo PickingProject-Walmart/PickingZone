@@ -2,6 +2,6 @@
 * [ ] UI optimization
 * [ ] 详情页
 * [ ] Table layout
-* [ ]  mechanism
+* [ ] REFRESH mechanism
 * [ ] Database
 * [ ] ...
