@@ -6,3 +6,9 @@
 .log-item {
   margin: 10rpx;
 }
+.orderList{
+  display: flex;
+  padding: 5rpx;
+  margin: 20rpx;
+  margin-bottom: 30rpx;
+}

@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.2.1",
+	"libVersion": "2.0.4",
 	"appid": "wx36647dd3857c349b",
 	"projectname": "picking",
 	"isGameTourist": false,
