@@ -1,47 +1,12 @@
 <!--pages/list_1/list_1.wxml-->
 
 <view class="task_queue">
-  <view class="o1">
-    <button><text>{{order_1}}</text></button>
-    <switch bindchange="order1Change"/>
-  </view>
-  <view class="o2">
-    <button><text>{{order_2}}</text></button>
-    <switch bindchange="order2Change"/>
-  </view>
-  <view class="o3">
-    <button><text>{{order_3}}</text></button>
-    <switch bindchange="order3Change"/>
-  </view>
-  <view class="o4">
-    <button><text>{{order_4}}</text></button>
-    <switch bindchange="order4Change"/>
-  </view>
-  <view class="o5">
-    <button><text>{{order_5}}</text></button>
-    <switch bindchange="order5Change"/>
-  </view>
-  <view class="o6">
-    <button><text>{{order_6}}</text></button>
-    <switch bindchange="order6Change"/>
-  </view>
-  <view class="o7">
-    <button><text>{{order_7}}</text></button>
-    <switch bindchange="order7Change"/>
-  </view>
-  <view class="o8">
-    <button><text>{{order_8}}</text></button>
-    <switch bindchange="order8Change"/>
-  </view>
-  <view class="o9">
-    <button><text>{{order_9}}</text></button>
-    <switch bindchange="order9Change"/>
-  </view>
-  <view class="o0">
-    <button><text>{{order_0}}</text></button>
-    <switch bindchange="order0Change"/>
-  </view>
-
+<button type='primary' class="refresh" bindtap="refreshPage">刷新</button>
+  <switch wx:for="{{orderArray}}" wx:key="unique" class="orderList">
+    <button class="bt">
+      <text>{{item.id}}</text>
+    </button>
+  </switch>
 </view>
 
-<button type='primary'  class="refresh">刷新</button>
+<view class="bottom"></view>

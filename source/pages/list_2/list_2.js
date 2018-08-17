@@ -5,16 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    order_1: "#1\n暂无任务 Empty",
-    order_2: "#2\n暂无任务 Empty",
-    order_3: "#3\n暂无任务 Empty",
-    order_4: "#4\n暂无任务 Empty",
-    order_5: "#5\n暂无任务 Empty",
-    order_6: "#6\n暂无任务 Empty",
-    order_7: "#7\n暂无任务 Empty",
-    order_8: "#8\n暂无任务 Empty",
-    order_9: "#9\n暂无任务 Empty",
-    order_0: "#10\n暂无任务 Empty",
+    orderArray: [
+      { id: "有任务 Empty", unique: '1', checked: false },
+      { id: "暂无任务 Empty", unique: '2', checked: false },
+      { id: "暂无任务 Empty", unique: '3', checked: false },
+      { id: "暂无任务 Empty", unique: '4', checked: false },
+      { id: "暂无任务 Empty", unique: '5', checked: false },
+      { id: "暂无任务 Empty", unique: '6', checked: false },
+      { id: "暂无任务 Empty", unique: '7', checked: false },
+      { id: "暂无任务 Empty", unique: '8', checked: false },
+      { id: "暂无任务 Empty", unique: '9', checked: false },
+      { id: "暂无任务 Empty", unique: '10', checked: false },
+    ]
   },
 
   /**
