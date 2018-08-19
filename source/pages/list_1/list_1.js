@@ -22,8 +22,10 @@ Page({
   /**
    * 订单完成状态改变
    */
-  checkcedReverse:function() {
-    orderArray[orderArray.indexOf(this)].checked = !orderArray[orderArray.indexOf(this)].checked
+  checkedReverse: function(e) {
+    var index = e.currentTarget.dataset.index
+    console.log(index)
+    this.data.orderArray[index].checked = !(this.data.orderArray[index].checked)
   },
 
   /**
@@ -34,13 +36,13 @@ Page({
     const length = this.data.orderArray.length
     for (let i = 0; i < length; ++i) {
       if (this.data.orderArray[i].checked==true){
-        
-      }
-      
-      
-      this.data.orderArray[i] = this.data.orderArray[i+1]
-      if (this.data.orderArray[i]==null) {
-        this.data.orderArray[i] = { id: "暂无任务 Empty", checked: 'false' }
+        for (let j=i; j<length;++j){
+          this.data.orderArray[j] = this.data.orderArray[j + 1]
+          if (this.data.orderArray[j] == null) {
+            this.data.orderArray[j] = { id: "暂无任务 Empty", unique: "10", checked: 'false' }
+          }
+        }
+      break
       }
     }
     this.setData({
