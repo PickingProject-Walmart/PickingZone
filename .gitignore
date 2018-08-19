@@ -1,3 +1,2 @@
 # data file (.xlsx)
-.data/
-.source/local_data/
+*.xlsx
