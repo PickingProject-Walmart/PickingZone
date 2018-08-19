@@ -2,7 +2,7 @@
 
 <view class="task_queue">
 <button type='primary' class="refresh" bindtap="refreshPage">刷新</button>
-  <switch wx:for="{{orderArray}}" wx:key="unique" class="orderList">
+  <switch wx:for="{{orderArray}}" data-index="{{index}}" wx:key="unique" bindtap="checkedReverse" class="orderList">
     <button class="bt">
       <text>{{item.id}}</text>
     </button>
