@@ -1,12 +1,19 @@
 <!--pages/list_1/list_1.wxml-->
 
 <view class="task_queue">
-<button type='primary' class="refresh" bindtap="refreshPage">刷新</button>
+  
+  <button type='default' disable="false" class="start-button" bindtap="start">Start</button>
+  <button type='primary' class="refresh" bindtap="refreshPage">Refresh</button>
+
   <switch wx:for="{{orderArray}}" data-index="{{index}}" wx:key="unique" bindtap="checkedReverse" class="orderList">
+    
     <button class="bt">
       <text>{{item.id}}</text>
     </button>
+    <icon type="waiting" size="35" class="clock-icon" bindtap="displayTime"/>
+  
   </switch>
+  
 </view>
 
 <view class="bottom"></view>

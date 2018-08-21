@@ -12,8 +12,17 @@
   margin-bottom: 30rpx;
 }
 
+.clock-icon{
+  margin: 10rpx;
+}
+
 .bt{
   margin-right: 30rpx;
+}
+
+.start-button{
+  width: 75%;
+  margin-bottom: 25rpx;
 }
 
 .refresh{
