@@ -2,6 +2,7 @@
 * [ ] UI optimization
 * [ ] 详情页
 * [ ] Table layout
-* [ ] REFRESH mechanism
+* [x] REFRESH mechanism
+* [x] Countdown timer
 * [ ] Database
 * [ ] ...
