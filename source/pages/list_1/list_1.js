@@ -36,7 +36,6 @@ Page({
     setInterval(function(){
       for(let i = 0; i < length; ++i) {
         that.data.orderArray[i].time--
-        console.log(that.data.orderArray[i].time)
       }
     }, 1000)
   },
@@ -45,7 +44,7 @@ Page({
    * 开始拣单
    */
   start: function(){
-    var that=this
+    var that = this
     that.countDown()
     this.setData({
       disabled: true
@@ -63,7 +62,7 @@ Page({
         for (let j=i; j<length;++j){
           this.data.orderArray[j] = this.data.orderArray[j + 1]
           if (this.data.orderArray[j] == null) {
-            this.data.orderArray[j] = { id: "暂无任务 Empty", unique: "10", checked: 'false' }
+            this.data.orderArray[j] = { id: "暂无任务 Empty", time: "480", unique: "10", checked: 'false' }
           }
         }
       break
@@ -78,10 +77,14 @@ Page({
    * 显示该订单剩余时间
    */
 
-  displayTime: function(){
+  displayTime: function(e){
+    var index = e.currentTarget.dataset.index
+    var time = this.data.orderArray[index].time
+    var minute = Math.floor(time / 60)
+    var second = time % 60
     wx.showModal({
       title: '剩余时间',
-      content: '00分00秒',
+      content: minute + '分' + second + '秒',
     })
   },
 
