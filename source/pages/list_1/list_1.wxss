@@ -27,7 +27,7 @@
 
 .refresh{
   width: 75%;
-  margin-bottom: 50rpx;
+  margin-bottom: 75rpx;
 }
 
 .bottom{

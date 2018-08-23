@@ -6,14 +6,12 @@
   <button type='primary' class="refresh" bindtap="refreshPage">Refresh</button>
 
   <switch wx:for="{{orderArray}}" data-index="{{index}}" wx:key="unique" bindtap="checkedReverse" class="orderList">
-    
     <button class="bt">
       <text>{{item.id}}</text>
     </button>
-    <icon type="waiting" size="35" class="clock-icon" bindtap="displayTime"/>
-  
+    <icon type="waiting" size="35" class="clock-icon" data-index="{{index}}" catchtap="displayTime"/>
   </switch>
-  
+
 </view>
 
 <view class="bottom"></view>
