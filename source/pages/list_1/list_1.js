@@ -6,9 +6,9 @@ Page({
    */
   data: {
     orderArray: [
-      { id: "金典有机纯牛奶250mL * 12\n---------------------\n特仑苏纯牛奶250mL * 12", time: '480', unique:'1', checked : false},
-      { id: "清风 原木纯品系列2层 150抽 抽取式面纸 3+1包 * 1\n---------------------\nMr.Muscle/威猛先生 清洁套装 (洁厕液600g*2+厨房重油污净500g) * 2", time: '480', unique: '2', checked: false},
-      { id: "农夫山泉 天然水 380ml/瓶*12瓶 * 1\n---------------------\n夏黑葡萄 约500g * 1", time: '480', unique: '3', checked: false},
+      { id: "金典有机纯牛奶250mL * 12\n特仑苏纯牛奶250mL * 12", time: '480', unique:'1', checked : false},
+      { id: "清风 原木纯品系列2层 150抽 抽取式面纸 3+1包 * 1\nMr.Muscle/威猛先生 清洁套装 (洁厕液600g*2+厨房重油污净500g) * 2", time: '480', unique: '2', checked: false},
+      { id: "农夫山泉 天然水 380ml/瓶*12瓶 * 1\n夏黑葡萄 约500g * 1", time: '480', unique: '3', checked: false},
       { id: "暂无任务 Empty", time: '480', unique: '4', checked: false},
       { id: "暂无任务 Empty", time: '480', unique: '5', checked: false},
       { id: "暂无任务 Empty", time: '480', unique: '6', checked: false},
@@ -62,7 +62,7 @@ Page({
         for (let j=i; j<length;++j){
           this.data.orderArray[j] = this.data.orderArray[j + 1]
           if (this.data.orderArray[j] == null) {
-            this.data.orderArray[j] = { id: "暂无任务 Empty", time: "480", unique: "10", checked: 'false' }
+            this.data.orderArray[j] = { id: "暂无任务 Empty", time: "480", unique: parseInt(this.data.orderArray[j-1].unique) + 1, checked: false}
           }
         }
       break
@@ -85,6 +85,13 @@ Page({
     wx.showModal({
       title: '剩余时间',
       content: minute + '分' + second + '秒',
+    })
+  },
+
+  detailedInfo: function(e){
+    var index = e.currentTarget.dataset.index
+    wx.navigateTo({
+      url: '../detail_1/detail_1?goodsID='+this.data.orderArray[index].id
     })
   },
 
