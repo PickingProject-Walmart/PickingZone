@@ -5,5 +5,5 @@
 * [x] REFRESH mechanism
 * [x] Countdown timer
 * [ ] Database
-* [] QR Code
+* [x] QR Code
 * [ ] Historical records
