@@ -4,22 +4,19 @@
   <view class="tr bg-w">
     <view class="th-1">名称</view>
     <view class="th-2">数量</view>
-    <view class="th-3">QR Code</view>
   </view>
   <block wx:for="{{goodsDict}}" wx:key="{{name}}">
     <view class="tr bg-g" wx:if="{{index % 2 == 1}}">
-      <view class="td-1" selectable="true">{{item.name}}</view>
+      <view class="td-1" selectable="true" catchlongpress='barcode'>{{item.name}}</view>
       <view class="td-2" selectable="true" scroll-y="true" >
         <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.num}}</text>
       </view>
-      <view class="td-3" selectable="true" style="overflow-y:auto;overflow-x:scroll" scroll-y="true"> </view>
     </view>
     <view class="tr bg-g2" wx:else>
-      <view class="td-1" selectable="true">{{item.name}}</view>
+      <view class="td-1" selectable="true" catchlongpress= 'barcode'>{{item.name}}</view>
       <view class="td-2" selectable="true" scroll-y="true">
         <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.num}}</text>
       </view>
-      <view class="td-3" selectable="true" scroll-y="true"> </view>
     </view>
 
   </block>
