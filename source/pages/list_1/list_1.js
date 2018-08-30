@@ -25,6 +25,7 @@ Page({
   checkedReverse: function(e) {
     var index = e.currentTarget.dataset.index
     this.data.orderArray[index].checked = !(this.data.orderArray[index].checked)
+    console.log(this.data.orderArray[index].unique, this.data.orderArray[index].checked)
   },
 
   /**
