@@ -1,0 +1,2 @@
+<!--pages/bar_code/bar_code.wxml-->
+<image src="barcode_sample.jpg" class="code"></image>

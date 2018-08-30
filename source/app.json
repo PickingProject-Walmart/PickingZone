@@ -10,7 +10,8 @@
     "pages/list_6/list_6",
     "pages/list_7/list_7",
     "pages/list_8/list_8",
-    "pages/detail_1/detail_1"
+    "pages/detail_1/detail_1",
+    "pages/bar_code/bar_code"
   ],
   "window": {
     "backgroundTextStyle": "light",

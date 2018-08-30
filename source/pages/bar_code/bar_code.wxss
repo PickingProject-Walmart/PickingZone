@@ -1,0 +1,6 @@
+/* pages/bar_code/bar_code.wxss */
+.code {
+  size: 80%;
+  align-content: center;
+  justify-content: center;
+}
